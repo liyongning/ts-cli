@@ -124,7 +124,7 @@ export function installCZ(): void {
 };
   `;
   try {
-    writeFileSync('./.commitlint.config.js', commitlint, { encoding: 'utf-8' });
+    writeFileSync('./commitlint.config.js', commitlint, { encoding: 'utf-8' });
   } catch (err) {
     printMsg(`${red('Failed to write commitlint.config.js file content')}`);
     printMsg(
