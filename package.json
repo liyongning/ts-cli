@@ -1,6 +1,6 @@
 {
   "name": "@liyongning/ts-cli",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "",
   "main": "./lib/index.js",
   "bin": {
@@ -10,7 +10,7 @@
     "dev:comment": "启动开发环境",
     "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
     "eslint:comment": "使用 ESLint 检查并自动修复 src 目录下所有扩展名为 .ts 的文件",
-    "eslint": "eslint --fix src --ext .ts",
+    "eslint": "eslint --fix src --ext .ts --max-warnings=0",
     "prettier:comment": "自动格式化 src 目录下的所有 .ts 文件",
     "prettier": "prettier --write \"src/**/*.ts\"",
     "commit:comment": "引导设置规范化的提交信息",

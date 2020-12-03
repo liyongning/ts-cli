@@ -47,7 +47,7 @@ export function installESLint(): void {
   const packageJson = readJsonFile<PackageJSON>('./package.json');
   packageJson.scripts['eslint:comment'] =
     '使用 ESLint 检查并自动修复 src 目录下所有扩展名为 .ts 的文件';
-  packageJson.scripts['eslint'] = 'eslint --fix src --ext .ts';
+  packageJson.scripts['eslint'] = 'eslint --fix src --ext .ts --max-warnings=0';
   writeJsonFile<PackageJSON>('./package.json', packageJson);
 }
 
